@@ -9,8 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TextBlocksTests {
 
 	@Test
-	void switchExpressions_retornaFinalDeSemanaxxxxxxxxxxxxxxxxxx_quandoSucesso() {
-
+	void textBlocks_retornaTextoIdentado_quandoSucesso() {
 		var resultado = """
 						<html>
 							<body>
@@ -18,8 +17,6 @@ class TextBlocksTests {
 							</body>
 						</html>
 						""";
-
-
 		assertEquals(String.valueOf("""
 									<html> 
 										<body>
@@ -27,7 +24,6 @@ class TextBlocksTests {
 										</body>
 									</html>
 									"""), resultado);
-
 	}
 
 }
